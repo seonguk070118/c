@@ -5,7 +5,14 @@ int main()
 {
     int a;
     scanf("%d",&a);
-    printf("%lld", a*123456789LL);
+    if(a==1 || a==3 || a==5 || a==7)
+    {
+    	printf("oh my god");
+	}
+	else
+	{
+		printf("enjoy");
+	}
     return 0;
 }
 
