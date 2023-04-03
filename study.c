@@ -3,15 +3,31 @@
 #include<limits.h>
 int main()
 {
-    int a;
-    scanf("%d",&a);
-    if(a==1 || a==3 || a==5 || a==7)
-    {
-    	printf("oh my god");
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a%2==0){
+    	printf("Â¦¼ö+");
 	}
-	else
-	{
-		printf("enjoy");
+	else{
+		printf("È¦¼ö+");
+	}
+	if(b%2==0){
+    	printf("Â¦¼ö=");
+	}
+	else{
+		printf("È¦¼ö=");
+	}
+	if(a%2==0 && b%2==0){
+		printf("Â¦¼ö");
+	}
+	else if(a%2==1 && b%2==1){
+		printf("Â¦¼ö");
+	}
+	else if(a%2==0 && b%2==1){
+		printf("È¦¼ö");
+	}
+	else if(a%2==1 && b%2==0){
+		printf("È¦¼ö");
 	}
     return 0;
 }
