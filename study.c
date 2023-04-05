@@ -3,19 +3,31 @@
 #include<limits.h>
 int main()
 {
-    int year;
-    scanf("%d",&year);
-    if(year%400==0)
-    {
-    	printf("Leap");
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a<=b){
+    	if(a<=c){
+    		if(b<=c) printf("%d",b);
+    		else printf("%d",c);
+		}
+		else printf("%d",a);
 	}
-   	else if(year%4==0 && year%100!=0)
-	{
-		printf("Leap");
+	else if(b<=a){
+		if(b<=c){
+			if(a<=c) printf("%d",a);
+			else printf("%d",c);
+		}
+		else printf("%d",b);
 	}
-	else{
-		printf("Normal");
+	else if(c<=a){
+		if(c<=b){
+			if(b<=a) printf("%d",b);
+			else printf("%d",a);
+		}
+		else printf("%d",c);
 	}
-    return 0;
+    else printf("%d",a);
+	return 0;
 }
+
 
