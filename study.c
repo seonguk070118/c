@@ -3,28 +3,20 @@
 #include<limits.h>
 int main()
 {
-    int h,m,t,lm;
-    scanf("%d %d\n%d",&h,&m,&t);
-    if(m+t>60)
+    int a[8]={},p=0,i,s=101;
+    for(i=0;i<7;i++)
     {
-    	lm=(m+t)/60;
-    	m=(m+t)%60;
-    	if(h+lm>23)
+    	scanf("%d",&a[i]);
+    	if(a[i]%2==1)
     	{
-    		h=h+lm-24;
-    		printf("%d %d",h,m);
+    		p+=a[i];
 		}
-		else
+		if(a[i]%2==1 && a[i]<s)
 		{
-			h=h+lm;
-			printf("%d %d",h,m);
+			s=a[i];
 		}
 	}
-	else
-	{
-		m=m+t;
-		printf("%d %d",h,m);
-	}
+	printf("%d\n%d",p,s);
 	return 0;
 }
 
