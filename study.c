@@ -8,13 +8,10 @@ int main()
     {
     	scanf("%d",&a[i]);
     	if(a[i]%2==1)
-    	{
     		p+=a[i];
-		}
-		if(a[i]%2==1 && a[i]<s)
-		{
-			s=a[i];
-		}
+	if(a[i]%2==1 && a[i]<s)
+		s=a[i];
+		
 	}
 	printf("%d\n%d",p,s);
 	return 0;
