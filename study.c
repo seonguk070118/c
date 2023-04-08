@@ -3,17 +3,11 @@
 #include<limits.h>
 int main()
 {
-    int a[8]={},p=0,i,s=101;
-    for(i=0;i<7;i++)
-    {
-    	scanf("%d",&a[i]);
-    	if(a[i]%2==1)
-    		p+=a[i];
-	if(a[i]%2==1 && a[i]<s)
-		s=a[i];
-		
-	}
-	printf("%d\n%d",p,s);
+    int y,m,d,sum=0;
+    scanf("%d %d %d",&y,&m,&d);
+    sum=(y-m+d)%10;
+    if(sum==0) printf("대박");
+    else printf("그럭저럭"); 
 	return 0;
 }
 
