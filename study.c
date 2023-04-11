@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<limits.h>
+#include <stdlib.h>
+
 int main()
 {
-    int y,m,d,sum=0;
-    scanf("%d %d %d",&y,&m,&d);
-    sum=(y-m+d)%10;
-    if(sum==0) printf("대박");
-    else printf("그럭저럭"); 
-	return 0;
+    int n=1;
+    
+    while(1){
+    	scanf("%d",&n);
+    	if(n==0) break;
+    	printf("%d\n",n);
+	}
+    return 0;
 }
 
 
