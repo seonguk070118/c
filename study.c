@@ -12,6 +12,7 @@ int main()
     	if(n==0) break;
     	printf("%d\n",n);
 	}
+    printf("git test");
     return 0;
 }
 
