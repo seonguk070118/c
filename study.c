@@ -4,10 +4,13 @@
 
 int main()
 {
-    int y,s;
-    scanf("%d %d",&y,&s);
-    if(s==1 || s==2) printf("%d",100-(y/10000)+13);
-    else printf("%d",13-(y/10000));
+    int b=0,i,sum=0;
+    scanf("%d", &b);
+    for(i=0;i<=b;i++)
+    {
+    	sum=sum+i;
+	}
+	printf("%d",i=sum);
     return 0;
 }
 
