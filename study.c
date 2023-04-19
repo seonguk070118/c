@@ -4,8 +4,6 @@
 
 int main()
 {
-
-
     int y;
     scanf("%d",&y);
     y=2013-y;
