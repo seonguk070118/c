@@ -4,14 +4,12 @@
 
 int main()
 {
-    int b=0,i,sum=0;
-    scanf("%d", &b);
-    for(i=0;i<=b;i++)
-    {
-    	sum=sum+i;
-	}
-	printf("%d",i=sum);
+    int y;
+    scanf("%d",&y);
+    y=2013-y;
+    if(y>=2000){
+        printf("%d %d",y-2000,3);
+    }
+    else printf("%d %d",y-1900,1);
     return 0;
 }
-
-
