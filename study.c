@@ -4,29 +4,17 @@
 
 int main()
 {
-    int m,sum;
-    scanf("%d",&m);
-    if(m<=500)
+    int n,k,i,sum[10001]={0,},j=1;
+    scanf("%d %d",&n,&k);
+    for(i=1;i<=n;i++)
     {
-    	sum=m*70/100;
+    	if(n%i==0)
+    	{
+    		sum[j]=i;
+    		j++;
+		}
 	}
-	else if(m>500&&m<=1500)
-    {
-    	sum=350+(m-500)*40/100;
-	}
-	else if(m>1500&&m<=4500)
-    {
-    	sum=750+(m-1500)*15/100;
-	}
-	else if(m>4500&&m<10000)
-    {
-    	sum=1200+(m-4500)*5/100;
-	}
-	else if(m>10000)
-    {
-    	sum=1475+(m-10000)*2/100;
-	}
-	printf("%d",sum);
+	printf("%d",sum[k]);
     return 0;
 }
 
