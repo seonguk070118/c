@@ -4,12 +4,29 @@
 
 int main()
 {
-    int y;
-    scanf("%d",&y);
-    y=2013-y;
-    if(y>=2000){
-        printf("%d %d",y-2000,3);
-    }
-    else printf("%d %d",y-1900,1);
+    int m,sum;
+    scanf("%d",&m);
+    if(m<=500)
+    {
+    	sum=m*70/100;
+	}
+	else if(m>500&&m<=1500)
+    {
+    	sum=350+(m-500)*40/100;
+	}
+	else if(m>1500&&m<=4500)
+    {
+    	sum=750+(m-1500)*15/100;
+	}
+	else if(m>4500&&m<10000)
+    {
+    	sum=1200+(m-4500)*5/100;
+	}
+	else if(m>10000)
+    {
+    	sum=1475+(m-10000)*2/100;
+	}
+	printf("%d",sum);
     return 0;
 }
+
