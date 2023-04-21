@@ -4,17 +4,9 @@
 
 int main()
 {
-    int n,k,i,sum[10001]={0,},j=1;
-    scanf("%d %d",&n,&k);
-    for(i=1;i<=n;i++)
-    {
-    	if(n%i==0)
-    	{
-    		sum[j]=i;
-    		j++;
-		}
-	}
-	printf("%d",sum[k]);
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    printf("%1d%1d%.2d",a,b,c);
     return 0;
 }
 
