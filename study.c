@@ -4,21 +4,16 @@
 
 int main()
 {
-    int s,i,j,k,l=0;
-    scanf("%d",&s);
-    for(i=s;i>=1;i--)
+    int A[3][2]={{100,100},{90,86},{89,98}};
+    int i,j;
+	for(i=0;i<3;i++)
 	{
-		for(k=0;k<l;k++)
+		for(j=0;j<2;j++)
 		{
-			printf(" ");
-		}
-		l++;
-    	for(j=i;j>=1;j--)
-		{
-    		printf("*");
+			printf("%d ",A[i][j]);
 		}
 		printf("\n");
 	}
-    return 0;
+	return 0;
 }
 
