@@ -5,21 +5,14 @@
 
 int main()
 {
-    int i,a[3],max=0,min=100,front=78958;
-    scanf("%d %d %d",&a[0],&a[1],&a[2]);
-    for(i=0;i<3;i++)
-    {
-    	if(a[i]>=max) max=a[i];
-    	if(a[i]<=min) min=a[i];
-	}
-	for(i=0;i<3;i++)
-    {
-		if(a[i]!=max && a[i]!=min) front=a[i];
-		if(a[i]==max && a[i]==min) front=a[i]; 
-	}
-	if(a[0]==a[1]) front=a[0];
-	if(a[0]==a[2]) front=a[0];
-	if(a[1]==a[2]) front=a[1];
-    printf("%d %d %d",min,front,max);
+    int a,b,t;
+    scanf("%d %d",&a,&b);
+    t=(a*60)+b;
+    t=t-30;
+    t=t+24*60;
+    t=t%(24*60);
+    a=t/60;
+    b=t%60;
+    printf("%d %d",a,b);
     return 0;
 }
