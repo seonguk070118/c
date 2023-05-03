@@ -5,14 +5,13 @@
 
 int main()
 {
-    int a,b,t;
-    scanf("%d %d",&a,&b);
-    t=(a*60)+b;
-    t=t-30;
-    t=t+24*60;
-    t=t%(24*60);
-    a=t/60;
-    b=t%60;
-    printf("%d %d",a,b);
-    return 0;
+	char str[101];
+	int i;
+	//gets(str);
+	scanf("%[^\n]s",str);
+	for(i=strlen(str)-1;i>=0;i--)
+	{
+		printf("%c",str[i]);
+	}
+	return 0;
 }
