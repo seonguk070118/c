@@ -1,17 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<limits.h>
-#include <stdlib.h>
 
 int main()
 {
-	char str[101];
-	int i;
-	//gets(str);
-	scanf("%[^\n]s",str);
-	for(i=strlen(str)-1;i>=0;i--)
+	int n;
+	scanf("%d",&n);
+	if(n>0)
 	{
-		printf("%c",str[i]);
+		printf("양수");
+	}
+	else if(n==0){
+		printf("%d",n);
+	}
+	else{
+		printf("음수");
 	}
 	return 0;
 }
