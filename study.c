@@ -4,17 +4,21 @@
 
 int main()
 {
-	int n;
-	scanf("%d",&n);
-	if(n>0)
+	int a,b,c,sum;
+	scanf("%d",&a);
+	b=a/10;
+	c=a%10;
+	sum=b+(c*10);
+	sum=sum*2;
+	sum=sum%100;
+	printf("%d\n",sum);
+	if(sum<=50)
 	{
-		printf("양수");
+		printf("GOOD");
 	}
-	else if(n==0){
-		printf("%d",n);
-	}
-	else{
-		printf("음수");
+	else
+	{
+		printf("OH MY GOD");
 	}
 	return 0;
 }
