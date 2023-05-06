@@ -4,21 +4,17 @@
 
 int main()
 {
-	int a,b,c,sum;
+	int a;
 	scanf("%d",&a);
-	b=a/10;
-	c=a%10;
-	sum=b+(c*10);
-	sum=sum*2;
-	sum=sum%100;
-	printf("%d\n",sum);
-	if(sum<=50)
-	{
-		printf("GOOD");
-	}
+	if(a>=90)
+		printf("A");
+	else if(a>=80)
+		printf("B");
+	else if(a>=70)
+		printf("C");
+	else if(a>=60)
+		printf("D");
 	else
-	{
-		printf("OH MY GOD");
-	}
+		printf("F");
 	return 0;
 }
