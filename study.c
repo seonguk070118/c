@@ -6,15 +6,11 @@ int main()
 {
 	int a;
 	scanf("%d",&a);
-	if(a>=90)
-		printf("A");
-	else if(a>=80)
-		printf("B");
-	else if(a>=70)
-		printf("C");
-	else if(a>=60)
-		printf("D");
+	if(a<=10)
+		printf("정상");
+	else if(a<=20)
+		printf("과체중");
 	else
-		printf("F");
+		printf("비만");
 	return 0;
 }
