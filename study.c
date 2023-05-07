@@ -4,8 +4,9 @@
 
 int main()
 {
-	int a,b;
-	scanf("%d %d",&a,&b);
-	printf("a = %d\nb = %d",a,b);
+	double a,b,c;
+	scanf("%lf %lf",&a,&b);
+	c=a/b;
+	printf("%.10lf",c);
 	return 0;
 }
