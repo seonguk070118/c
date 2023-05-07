@@ -4,13 +4,8 @@
 
 int main()
 {
-	int a;
-	scanf("%d",&a);
-	if(a<=10)
-		printf("정상");
-	else if(a<=20)
-		printf("과체중");
-	else
-		printf("비만");
+	int a,b;
+	scanf("%d %d",&a,&b);
+	printf("a = %d\nb = %d",a,b);
 	return 0;
 }
