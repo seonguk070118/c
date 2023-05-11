@@ -5,17 +5,18 @@
 
 int main()
 {
-	char a[100001]={};
-	int i,s,l=0,r=0;
-	gets(a);
-	s=strlen(a);
-	for(i=0;i<s;i++)
+	int a[10000001]={},i=0,n,m,x;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
 	{
-		if(a[i]=='(')
-			l++;
-		else if(a[i]==')')
-			r++;
+		scanf("%d",&x);
+		a[x]=1;
 	}
-	printf("%d %d",l,r);
+	scanf("%d",&m);
+	for(i=0;i<m;i++)
+	{
+		scanf("%d",&x);
+		printf("%d ",a[x]);
+	}
 	return 0;
 }
