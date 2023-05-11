@@ -1,27 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<limits.h>
+#include<string.h>
 
 int main()
 {
-	int a[1001]={},b,i,j,k=0,x=0;
-	scanf("%d",&b);
-	for(i=0;i<b;i++)
+	char a[100001]={};
+	int i,s,l=0,r=0;
+	gets(a);
+	s=strlen(a);
+	for(i=0;i<s;i++)
 	{
-		scanf("%d",&a[i]);
+		if(a[i]=='(')
+			l++;
+		else if(a[i]==')')
+			r++;
 	}
-	for(i=0;i<b;i++)
-	{
-		for(j=0;j<b;j++)
-		{
-			printf("%d ",a[k+x]);
-			k++;
-			if(k+x>=b)
-				k=k-b;
-		}
-		x++;
-		k=0;
-		printf("\n");
-	}
+	printf("%d %d",l,r);
 	return 0;
 }
