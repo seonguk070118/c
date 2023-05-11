@@ -3,20 +3,30 @@
 #include<limits.h>
 #include<string.h>
 
-int main()
-{
-	int a[10000001]={},i=0,n,m,x;
-	scanf("%d",&n);
+int main(){
+ 
+    int a[1001]={},n,i,j;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+    	scanf("%d",&a[i]);
+	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&x);
-		a[x]=1;
+		printf("%d: ",i+1);
+		for(j=0;j<n;j++)
+		{
+			if(j!=i)
+			{
+				if(a[i]>a[j])
+					printf("> ");
+				else if(a[i]<a[j])
+					printf("< ");
+				else if(a[i]=a[j])
+					printf("= ");
+			}
+		}
+		printf("\n");
 	}
-	scanf("%d",&m);
-	for(i=0;i<m;i++)
-	{
-		scanf("%d",&x);
-		printf("%d ",a[x]);
-	}
-	return 0;
+    return 0;
 }
