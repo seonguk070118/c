@@ -5,28 +5,40 @@
 
 int main(){
  
-    int a[1001]={},n,i,j;
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-    	scanf("%d",&a[i]);
+    int a,b,mx=0,i,sum;
+    scanf("%d %d",&a,&b);
+    sum=a+b;
+   	if(sum>mx)
+   		mx=sum;
+   	sum=a-b;
+   	if(sum>mx)
+   		mx=sum;
+   	sum=a*b;
+   	if(sum>mx)
+   		mx=sum;
+   	sum=a/b;
+   	if(sum>mx)
+   		mx=sum;
+   	sum=b-a;
+   	if(sum>mx)
+   		mx=sum;
+   	sum=b/a;
+   	if(sum>mx)
+   		mx=sum;
+   	sum=a;
+   	for(i=1;i<b;i++)
+   	{
+   		sum=sum*a;
 	}
-	for(i=0;i<n;i++)
-	{
-		printf("%d: ",i+1);
-		for(j=0;j<n;j++)
-		{
-			if(j!=i)
-			{
-				if(a[i]>a[j])
-					printf("> ");
-				else if(a[i]<a[j])
-					printf("< ");
-				else if(a[i]=a[j])
-					printf("= ");
-			}
-		}
-		printf("\n");
+	if(sum>mx)
+   		mx=sum;
+	sum=b;
+   	for(i=1;i<a;i++)
+   	{
+   		sum=sum*b;
 	}
+	if(sum>mx)
+   		mx=sum;
+	printf("%.6f",(float)mx);
     return 0;
 }
