@@ -5,12 +5,9 @@
 
 int main(){
  
-    char str[11]={};
-    int n,i;
-    scanf("%s %d",str,&n);
-    for(i=0;i<n;i++)
-    {
-    	printf("%s",str);
-	}
+    char str[1000001]={};
+    scanf("%s",str);
+   	printf("%s",str);
+
     return 0;
 }
