@@ -5,18 +5,18 @@
 
 int main(){
  
-    int a,b,bm=1;
-    int m,i,s,sf=0;
-    scanf("%d",&m);
-    scanf("%d %d %d",&a,&b,&s);
-    sf+=s;
-    bm=b;
-    for(i=0;i<m-1;i++)
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(b%a==0)
     {
-    	scanf("%d %d %d",&a,&b,&s);
-    	sf+=s;
-    	bm=b*(bm/a);
+    	printf("%d*%d=%d",a,b/a,b);
 	}
-	printf("%d %d",sf%2,bm);
+	else if(a%b==0)
+    {
+    	printf("%d*%d=%d",b,a/b,a);
+	}
+	else{
+		printf("none");
+	}
     return 0;
 }
