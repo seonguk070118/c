@@ -5,18 +5,28 @@
 
 int main(){
  
-    int a,b;
-    scanf("%d %d",&a,&b);
-    if(b%a==0)
+    int a,b,c,d,sum;
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    sum=a+b+c+d;
+     
+    if(sum==0)
     {
-    	printf("%d*%d=%d",a,b/a,b);
+    	printf("¸ð");
 	}
-	else if(a%b==0)
+	else if(sum==1)
     {
-    	printf("%d*%d=%d",b,a/b,a);
+    	printf("µµ");
+	}
+	else if(sum==2)
+    {
+    	printf("°³");
+	}
+	else if(sum==3)
+    {
+    	printf("°É");
 	}
 	else{
-		printf("none");
+		printf("À·");
 	}
     return 0;
 }
