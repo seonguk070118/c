@@ -5,28 +5,15 @@
 
 int main(){
  
-    int a,b,c,d,sum;
-    scanf("%d %d %d %d",&a,&b,&c,&d);
-    sum=a+b+c+d;
-     
-    if(sum==0)
+    int a[7]={0,400,340,170,100,70},sum,i,k;
+    for(i=0;i<2;i++)
     {
-    	printf("¸ð");
+    	scanf("%d",&sum);
+    	k+=a[sum];
 	}
-	else if(sum==1)
-    {
-    	printf("µµ");
-	}
-	else if(sum==2)
-    {
-    	printf("°³");
-	}
-	else if(sum==3)
-    {
-    	printf("°É");
-	}
-	else{
-		printf("À·");
-	}
+	if(k>500)
+		printf("angry");
+	else
+		printf("no angry");
     return 0;
 }
