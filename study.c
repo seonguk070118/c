@@ -5,15 +5,16 @@
 
 int main(){
  
-    int a[7]={0,400,340,170,100,70},sum,i,k;
-    for(i=0;i<2;i++)
+    int i;
+    char a[21];
+    gets(a);
+    for(i=0;i<strlen(a);i++)
     {
-    	scanf("%d",&sum);
-    	k+=a[sum];
+    	if(a[i]>=65&&a[i]<=90)
+    		a[i]+=32;
+    	else if(a[i]>=97&&a[i]<=122)
+    		a[i]-=32;
 	}
-	if(k>500)
-		printf("angry");
-	else
-		printf("no angry");
+	printf("%s",a);
     return 0;
 }
