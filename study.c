@@ -3,29 +3,26 @@
 #include<limits.h>
 #include<string.h>
 #include <stdbool.h>
+int f(int a)
+{
+	int s=0;
+	while(a)
+	{
+		s=s*10;
+		s=s+(a%10);
+		a=a/10;
+	}
+	return s;
+}
 
-int main(){
- 
-    bool a=1,b=1; 
-	//and
-    printf("%d\n",a*b);
-    
-	//or
-    printf("%d\n",a|b);
-    
-    //not
-    printf("%d\n",!a);
-    
-    //nand
-    printf("%d\n",!(a*b));
-    
-    //nor
-    printf("%d\n",!(a|b));
-    
-    //xor
-    printf("%d\n",(a*!b)|(!a*b));
-    
-    //xnor
-    printf("%d\n",!((a*!b)|(!a*b)));
-    return 0;
+int main()
+{
+	int a,b,c;
+	scanf("%d",&a);
+	b=a+f(a);
+	if(f(b)==b)
+		printf("YES");
+	else
+		printf("NO");
+	return 0;
 }
