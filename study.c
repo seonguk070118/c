@@ -3,26 +3,25 @@
 #include<limits.h>
 #include<string.h>
 #include <stdbool.h>
-int f(int a)
-{
-	int s=0;
-	while(a)
-	{
-		s=s*10;
-		s=s+(a%10);
-		a=a/10;
-	}
-	return s;
-}
 
 int main()
 {
-	int a,b,c;
-	scanf("%d",&a);
-	b=a+f(a);
-	if(f(b)==b)
-		printf("YES");
-	else
-		printf("NO");
+	int a,b,c,max=0;
+	scanf("%d %d %d",&a,&b,&c);
+	if(max<a) max=a;
+	if(max<b) max=b;
+	if(max<c) max=c;
+	if(max==a && a<b+c){
+		printf("yes");
+	}
+	else if(max==b && b<a+c){
+		printf("yes");
+	}
+	else if(max==c && c<b+a){
+		printf("yes");
+	}
+	else{
+		printf("no");
+	}
 	return 0;
 }
