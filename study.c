@@ -6,22 +6,30 @@
 
 int main()
 {
-	int a,b,c,max=0;
-	scanf("%d %d %d",&a,&b,&c);
-	if(max<a) max=a;
-	if(max<b) max=b;
-	if(max<c) max=c;
-	if(max==a && a<b+c){
-		printf("yes");
+	int year,month;
+	scanf("%d %d",&year,&month);
+	if(month==2)
+	{
+		if(year%400==0)
+		{
+			printf("29");
+		}
+		else if(year%4==0 && year%100!=0)
+		{
+			printf("29");
+		}
+		else
+		{
+			printf("28");
+		}
 	}
-	else if(max==b && b<a+c){
-		printf("yes");
+	else if(month==4 || month==6 || month==9 || month==11)
+	{
+		printf("30");
 	}
-	else if(max==c && c<b+a){
-		printf("yes");
-	}
-	else{
-		printf("no");
+	else
+	{
+		printf("31");
 	}
 	return 0;
 }
