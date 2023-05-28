@@ -3,23 +3,14 @@
 #include<limits.h>
 #include<string.h>
 #include <stdbool.h>
-
 int main()
 {
-	int a,b,c,s;
-	scanf("%d %d %d",&a,&b,&c);
-	s=a+c;
-	if(b>s)
+	int a[10]={},b,i;
+	for(i=0;i<10;i++)
 	{
-		printf("advertise");
+		scanf("%d",&a[i]);
 	}
-	else if(b<s)
-	{
-		printf("do not advertise");
-	}
-	else
-	{
-		printf("does not matter");
-	}
+	scanf("%d",&b);
+	printf("%d",a[b-1]);
 	return 0;
 }
