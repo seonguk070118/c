@@ -7,15 +7,7 @@ int main()
 {
 	double a,b,p,body;
 	scanf("%lf %lf",&a,&b);
-	if(a<150){
-		p=(a-100);
-	}
-	else if(a<160&&a>=150){
-		p=(a-150)/2+50;
-	}
-	else if(a>=160){
-		p=(a-100)*0.9;
-	}
+	p=(a-100)*0.9;
 	body=(b-p)*100/p;
 	if(body<10)
 		printf("Á¤»ó");
