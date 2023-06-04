@@ -5,15 +5,10 @@
 #include <stdbool.h>
 int main()
 {
-	double a,b,p,body;
-	scanf("%lf %lf",&a,&b);
-	p=(a-100)*0.9;
-	body=(b-p)*100/p;
-	if(body<10)
-		printf("정상");
-	else if(body<=20&&body>10)
-		printf("과체중");
-	else if(body>20)
-		printf("비만");
+	int i;
+	for(i=1;i<=100;i++)
+	{
+		printf("%d ",i);
+	}
     return 0;
 }
