@@ -5,11 +5,21 @@
 #include <stdbool.h>
 int main()
 {
-	int i,n;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++)
+	int i,n,m;
+	scanf("%d %d",&n,&m);
+	if(n>=m)
 	{
-		printf("%d ",i);
+		for(i=m;i<=n;i++)
+		{
+			printf("%d ",i);
+		}
+	}
+	else
+	{
+		for(i=n;i<=m;i++)
+		{
+			printf("%d ",i);
+		}
 	}
     return 0;
 }
