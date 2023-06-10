@@ -5,22 +5,11 @@
 #include <stdbool.h>
 int main()
 {
-	int i;
-	char n,m;
-	scanf("%c %c",&n,&m);
-	if(n>=m)
+	double a,b,i;
+	scanf("%lf %lf",&a,&b);
+	for(i=a;i<=b;i+=0.01)
 	{
-		for(i=m;i<=n;i++)
-		{
-			printf("%c ",i);
-		}
-	}
-	else
-	{
-		for(i=n;i<=m;i++)
-		{
-			printf("%c ",i);
-		}
+		printf("%.2lf ",i);
 	}
     return 0;
 }
