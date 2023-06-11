@@ -5,11 +5,11 @@
 #include <stdbool.h>
 int main()
 {
-	double a,b,i;
-	scanf("%lf %lf",&a,&b);
-	for(i=a;i<=b;i+=0.01)
+	int a,i;
+	scanf("%d",&a);
+	for(i=0;i<a;i++)
 	{
-		printf("%.2lf ",i);
+		printf("*");
 	}
     return 0;
 }
