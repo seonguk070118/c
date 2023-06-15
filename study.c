@@ -3,13 +3,20 @@
 #include<limits.h>
 #include<string.h>
 #include <stdbool.h>
+
+
+
+void f(int n){
+	if(n==0) return;
+	f(n/2);
+	if(n%2==0) printf("0");
+	else if(n%2==1) printf("1");
+}
+
 int main()
 {
-	int a,i;
-	scanf("%d",&a);
-	for(i=0;i<a;i++)
-	{
-		printf("*");
-	}
-    return 0;
+	int n,m;
+  	scanf("%d", &n);
+  	if(n<=0) printf("0");
+  	f(n);
 }
