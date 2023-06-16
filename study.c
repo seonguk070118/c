@@ -6,17 +6,14 @@
 
 
 
-void f(int n){
-	if(n==0) return;
-	f(n/2);
-	if(n%2==0) printf("0");
-	else if(n%2==1) printf("1");
-}
-
 int main()
 {
-	int n,m;
-  	scanf("%d", &n);
-  	if(n<=0) printf("0");
-  	f(n);
+	int n,m,i;
+  	scanf("%d %d",&n,&m);
+  	for(i=n;i<=m;i++)
+  	{
+  		if(i%2==1){
+  			printf("%d ",i);
+		}
+	}
 }
