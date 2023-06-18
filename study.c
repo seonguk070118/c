@@ -8,10 +8,11 @@
 
 int main()
 {
-	int n,i,sum=0;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++){
-		if(i%2==0)
+	int a,b,i,sum=0;
+	scanf("%d %d",&a,&b);
+	for(i=a;i<=b;i++)
+	{
+		if(i%3==0)
 		{
 			sum+=i;
 		}
