@@ -8,14 +8,19 @@
 
 int main()
 {
-	int a,b,i,sum=0;
-	scanf("%d %d",&a,&b);
-	for(i=a;i<=b;i++)
+	int i,a;
+	for(i=0;i<10;i++)
 	{
-		if(i%3==0)
+		scanf("%d",&a);
+		if(a%5==0)
 		{
-			sum+=i;
+			printf("%d",a);
+			break;
+		}
+		if(i==9)
+		{
+			printf("0");
+			break;
 		}
 	}
-	printf("%d",sum);
 }
