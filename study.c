@@ -9,18 +9,9 @@
 int main()
 {
 	int i,a;
-	for(i=0;i<10;i++)
+	scanf("%d",&a);
+	for(i=1;i<=9;i++)
 	{
-		scanf("%d",&a);
-		if(a%5==0)
-		{
-			printf("%d",a);
-			break;
-		}
-		if(i==9)
-		{
-			printf("0");
-			break;
-		}
+		printf("%d*%d=%d\n",a,i,a*i);
 	}
 }
