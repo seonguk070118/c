@@ -13,7 +13,10 @@ int main()
 	for(i=0;i<a;i++)
 	{
 		scanf("%d",&b);
-		sum+=b;
+		if(b%5==0)
+		{
+			sum+=b;
+		}
 	}
 	printf("%d",sum);
 }
