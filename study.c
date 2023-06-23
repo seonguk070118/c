@@ -13,9 +13,9 @@ int main()
 	for(i=0;i<a;i++)
 	{
 		scanf("%d",&b);
-		if(b%5==0)
+		if(b%2==1)
 		{
-			sum+=b;
+			sum++;
 		}
 	}
 	printf("%d",sum);
