@@ -8,15 +8,12 @@
 
 int main()
 {
-	int i,a,b,sum=0;
-	scanf("%d",&a);
-	for(i=0;i<a;i++)
+	int i,a,b,c,n,sum=0;
+	scanf("%d %d %d %d",&a,&b,&c,&n);
+	for(i=1;i<n;i++)
 	{
-		scanf("%d",&b);
-		if(b%2==1)
-		{
-			sum++;
-		}
+		a*=b;
+		a+=c;
 	}
-	printf("%d",sum);
+	printf("%d",a);
 }
