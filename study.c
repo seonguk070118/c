@@ -8,15 +8,16 @@
 
 int main()
 {
-	int i,n,sum=0;
+	int i,n,max=0,a;
 	scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		if(i%10==1)
+		scanf("%d",&a);
+		if(a>max)
 		{
-			sum++;
+			max=a;
 		}
 	}
-	printf("%d",sum);
+	printf("%d",max);
 	return 0;
 }
