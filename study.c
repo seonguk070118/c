@@ -4,20 +4,13 @@
 #include<string.h>
 #include <stdbool.h>
 
-
+long long f()
+{
+	return -2147483649;
+}
 
 int main()
 {
-	int i,n,max=0,a;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++)
-	{
-		scanf("%d",&a);
-		if(a>max)
-		{
-			max=a;
-		}
-	}
-	printf("%d",max);
+	printf("%lld",f());
 	return 0;
 }
