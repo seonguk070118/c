@@ -4,29 +4,28 @@
 #include<string.h>
 #include <stdbool.h>
 
-int n;
 
-long long int d[110];
-
-int f(){
-	int man=1000000000,i;
-	for(i=1;i<=n;i++)
-	{
-		if(d[i]<man)
-		{
-			man=d[i];
-		}
-	}
-	return man;
-}
 int main()
 {
-  scanf("%d", &n);
-  int i;
-  for(i=1; i<=n; i++)
-    scanf("%lld", &d[i]);
-
-  printf("%lld", f());
-  return 0;
+	int a,b,sum=0;
+	scanf("%d %d",&a,&b);
+	if(a%2==0)
+	{
+		sum+=a/2*10;
+	}
+	else
+	{
+		sum+=a/2+1;
+	}
+	if(b%2==0)
+	{
+		sum+=b/2*10;
+	}
+	else
+	{
+		sum+=b/2+1;
+	}
+	printf("%d",sum);
+	return 0;
 }
 
