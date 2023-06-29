@@ -4,28 +4,29 @@
 #include<string.h>
 #include <stdbool.h>
 
+typedef struct STUDENT{
+	int no;
+	int inf;
+	int mat;
+	int sum;
+	double avg;
+}student;
 
 int main()
 {
-	int a,b,sum=0;
-	scanf("%d %d",&a,&b);
-	if(a%2==0)
+	int n,i;
+	student a[101];
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
 	{
-		sum+=a/2*10;
+		scanf("%d %d %d",&a[i].no,&a[i].inf,&a[i].mat);
+		a[i].sum=a[i].inf+a[i].mat;
+		a[i].avg=((float)a[i].inf+(float)a[i].mat)/2;
 	}
-	else
+	for(i=0;i<n;i++)
 	{
-		sum+=a/2+1;
+		printf("%d %d %.1f\n",a[i].no,a[i].sum,a[i].avg);
 	}
-	if(b%2==0)
-	{
-		sum+=b/2*10;
-	}
-	else
-	{
-		sum+=b/2+1;
-	}
-	printf("%d",sum);
 	return 0;
 }
 
