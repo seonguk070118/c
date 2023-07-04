@@ -6,13 +6,23 @@
 
 int main()
 {
-	int a,i,sum=1;
-	scanf("%d",&a);
-	for(i=2;i<=a;i++)
+	int n,a,i,b;
+	scanf("%d",&n);
+	b=n/2+1;
+	for(i=1;i<=n;i++)
 	{
-		sum=sum*i;
+		scanf("%d",&a);
+		if(i==b){
+			printf("%d ",a);
+		}
+		if(i==1){
+			printf("%d ",a);
+		}
+		if(i==n)
+		{
+			printf("%d ",a);
+		}
 	}
-	printf("%d",sum);
 	return 0;
 }
 
