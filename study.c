@@ -6,23 +6,20 @@
 
 int main()
 {
-	int n,a,i,b;
-	scanf("%d",&n);
-	b=n/2+1;
-	for(i=1;i<=n;i++)
+	int a,b,i,sum=0;
+	scanf("%d %d",&a,&b);
+	for(i=a;i<=b;i++)
 	{
-		scanf("%d",&a);
-		if(i==b){
-			printf("%d ",a);
-		}
-		if(i==1){
-			printf("%d ",a);
-		}
-		if(i==n)
+		if(i%2==0)
 		{
-			printf("%d ",a);
+			sum-=i;
+		}
+		else if(i%2==1)
+		{
+			sum+=i;
 		}
 	}
+	printf("%d",sum);
 	return 0;
 }
 
