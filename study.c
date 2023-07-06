@@ -13,13 +13,15 @@ int main()
 		if(i%2==0)
 		{
 			sum-=i;
+			printf("-%d",i);
 		}
 		else if(i%2==1)
 		{
 			sum+=i;
+			printf("+%d",i);
 		}
 	}
-	printf("%d",sum);
+	printf("=%d",sum);
 	return 0;
 }
 
